@@ -1,0 +1,11 @@
+body { margin:0; font-family:sans-serif; background:#444; color:#fff; }
+#slots { display:grid; grid-template-columns:repeat(5,1fr); gap:8px; padding:16px; }
+.slot { background:#dadada; color:#000; padding:8px; text-align:center; cursor:pointer; white-space:pre-line; }
+.slot.RESERVADO { background:#014A76; color:#fff; }
+.slot.CONFIRMADO { background:#F4CB89; color:#000; }
+.slot.JUGANDO { background:#6d1765; color:#fff; }
+.slot.PAGADO { background:#6dcf59; color:#fff; }
+.hidden { display:none; }
+.modal { position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.5); display:flex; align-items:center; justify-content:center; }
+.modal-content { background:#fff; color:#000; padding:16px; border-radius:4px; display:flex; flex-direction:column; gap:8px; }
+.modal-content label { display:flex; justify-content:space-between; }
